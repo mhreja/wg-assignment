@@ -168,17 +168,17 @@
                         <div class="form-group">
                             <label>Product Name</label>
                             <input type="text" class="form-control" name="product_name" placeholder="Product Name">
-                            <span class="my-invalid-feedback" id="product_nameError"></span>
+                            <span class="my-invalid-feedback" id="product_nameErrorEdit"></span>
                         </div>
                         <div class="form-group">
                             <label>Product Description</label>
                             <textarea name="product_desc" class="form-control" cols="30" rows="10"></textarea>
-                            <span class="my-invalid-feedback" id="product_descError"></span>
+                            <span class="my-invalid-feedback" id="product_descErrorEdit"></span>
                         </div>
                         <div class="form-group">
                             <label>Change Product Image</label>
                             <input type="file" class="form-control" name="image" accept=".jpg, .png, .jpeg">
-                            <span class="my-invalid-feedback" id="imageError"></span>
+                            <span class="my-invalid-feedback" id="imageErrorEdit"></span>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -355,7 +355,7 @@
             error: function(response){
                 if (response.responseJSON.hasOwnProperty('errors')) {
                     $.each(response.responseJSON.errors, function(key, value){
-                        $('#'+key+'Error').html('<strong>'+value+'</strong>');
+                        $('#'+key+'ErrorEdit').html('<strong>'+value+'</strong>');
                     })
                     $.bootstrapGrowl("Error !" , {
                         ele: "body", //On which Element to Append
