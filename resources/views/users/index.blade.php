@@ -80,6 +80,7 @@
 		</div>
 	</div>
 
+
 	<!-- Modal -->
 	<div class="modal fixed-left fade" data-key="look" id="exampleModalLong" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -120,7 +121,7 @@
 						</div>
 						<div class="form-group" id="pass">
 							<label>Password</label>
-							<input type="password" class="form-control" name="pass" placeholder="Craete Your Password">
+							<input type="password" class="form-control" name="pass" placeholder="Create Your Password">
 							<span class="invalid-feedback" role="alert" id="passError"></span>
 						</div>
 					</form>

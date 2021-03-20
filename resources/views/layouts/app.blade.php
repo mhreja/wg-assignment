@@ -58,6 +58,16 @@
                     <span>Products</span></a>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item @if(Route::current()->getName() == 'mydatatable.index') active @endif">
+                <a class="nav-link" href="{{route('mydatatable.index')}}">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>My Datatable</span></a>
+            </li>
+
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
